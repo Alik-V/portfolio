@@ -146,7 +146,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     const clickedLink = this;
 
     for (let j = 0; j < pages.length; j++) {
-      if (clickedLink.innerHTML.toLowerCase() === pages[j].dataset.page) {
+      if (clickedLink.textContent.trim().toLowerCase() === pages[j].dataset.page) {
         pages[j].classList.add("active");
         clickedLink.classList.add("active");
         window.scrollTo(0, 0);
