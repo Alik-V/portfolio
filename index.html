@@ -28,6 +28,28 @@
 <body>
 
   <!--
+    - #SPLASH SCREEN
+  -->
+
+  <div class="splash" data-splash>
+
+    <div class="splash-bg"></div>
+
+    <figure class="splash-avatar" data-splash-avatar>
+      <span class="splash-avatar-inner">
+        <img src="./assets/images/profile-pic.png" alt="Alik Vodyanov">
+      </span>
+    </figure>
+
+    <div class="splash-text">
+      <h1 class="splash-name">Alik Vodyanov</h1>
+      <p class="splash-role">Senior Operational Researcher</p>
+      <div class="splash-loader"><span></span></div>
+    </div>
+
+  </div>
+
+  <!--
     - #MAIN
   -->
 
@@ -41,7 +63,7 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
+        <figure class="avatar-box" data-avatar-target>
           <img src="./assets/images/profile-pic.png" alt="Alik Vodyanov" width="80">
         </figure>
 
@@ -121,22 +143,32 @@
 
           </li>
 
-        </ul>
+          <li class="contact-item">
 
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/Alik-V" class="social-link">
+            <div class="icon-box">
               <ion-icon name="logo-github"></ion-icon>
-            </a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/Alik-V" target="_blank" rel="noopener" class="contact-link">github.com/Alik-V</a>
+            </div>
+
           </li>
 
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/alik-vodyanov/" class="social-link">
+          <li class="contact-item">
+
+            <div class="icon-box">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/alik-vodyanov/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/alik-vodyanov</a>
+            </div>
+
           </li>
 
         </ul>
@@ -275,6 +307,21 @@
         </section>
 
 
+        <!--
+          - github activity
+        -->
+
+        <section class="github-activity">
+
+          <h3 class="h3 github-activity-title">GitHub Activity</h3>
+
+          <div class="github-graph-card" data-github-graph>
+
+            <p class="github-graph-status">Loading contributions…</p>
+
+          </div>
+
+        </section>
 
 
       </article>
